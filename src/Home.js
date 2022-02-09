@@ -7,7 +7,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   const fetchProducts = () => {
-    Axios.get("http://192.168.88.24:8000/api/v1/foods/").then(res => {
+    Axios.get("https://greengardenhotel-backend.herokuapp.com/api/v1/foods/").then(res => {
       console.log(res)
       setProducts(res.data)
     });
